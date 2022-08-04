@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="BaseEntityDal.cs" />
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookManager.cs" />
     <Compile Include="DBLibraryContext.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

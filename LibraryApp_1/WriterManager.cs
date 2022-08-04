@@ -37,8 +37,8 @@ namespace LibraryApp_1
 
         public DataTable ListSearch(string searchcontent)
         {
-            string query = "Select WriterId 'Yazar No',WriterName'Yazar Ad',WriterSurname 'YazarSoyad' FROM Writers'" +
-                 " WHERE WriterName+' '+WriterSurname LIKE '%" + searchcontent.Trim().ToLower() + "%'";
+            string query = "Select WriterId 'Yazar No',WriterName'Yazar Ad',WriterSurname 'Yazar Soyad' FROM Writers " +
+                "WHERE WriterName LIKE '%"+searchcontent.ToLower().Trim()+"%' OR WriterSurname LIKE '%" + searchcontent.ToLower().Trim() + "%' OR WriterName+' '+WriterSurname LIKE '%" + searchcontent.ToLower().Trim() + "%'";
 
             return EntityList(query);
         }

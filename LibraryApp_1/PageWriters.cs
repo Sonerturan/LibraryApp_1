@@ -110,7 +110,7 @@ namespace LibraryApp_1
                 lblerror.Text = null;
                 if (writerManager.RegisteredWriter(txtwritername.Text+" "+txtwritersurname.Text) == txtwritername.Text.ToLower().Trim()+" "+txtwritersurname.Text.ToLower().Trim())
                 {
-                    MessageBox.Show(txtwritername.Text +" "+txtwritersurname+ " Adlı yazar sistemde Zaten mevcut", "Mevcut olan yazar ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(txtwritername.Text +" "+txtwritersurname.Text+ " Adlı yazar sistemde Zaten mevcut", "Mevcut olan yazar ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
