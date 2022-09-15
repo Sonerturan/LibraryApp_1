@@ -17,6 +17,7 @@ namespace LibraryApp_1
             EntityAdd(query);
         }
 
+
         public void Delete(Book entity)
         {
             string query = "DELETE FROM Books WHERE BookId='" + entity.BookId + "'";
